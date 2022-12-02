@@ -13,13 +13,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use("/styles", express.static(__dirname + "/styles"));
 
-app.get("/", (req, res) => {
-  res.render("index");
-});
+app.use("/", require("./routes/messageRoutes"));
 
-app.get("/new", (req, res) => {
-  res.render("form");
-});
+app.use("/new", require("./routes/messageRoutes"));
 
 app.use((req, res) => {
   res.status(404).render("404");
