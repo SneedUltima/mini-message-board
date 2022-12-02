@@ -11,6 +11,7 @@ app.listen(port, () => {
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use("/styles", express.static(__dirname + "/styles"));
 
 app.get("/", (req, res) => {
   res.render("index");

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #101010;
+  color: #ebebeb;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.title-container {
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+
+.messages-container {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  .message {
+    min-width: 200px;
+    font-size: 24px;
+    border: 2px solid rgb(47, 255, 57);
+    border-radius: 7px;
+    padding: 20px 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+
+.button-container {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    cursor: pointer;
+    border: none;
+    padding: 0 56px;
+    height: 45px;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 24px;
+    border: 2px solid rgb(47, 255, 57);
+    background-color: transparent;
+    color: white;
+
+    &:hover {
+      background: rgb(47, 255, 57);
+      color: black;
+      transition: 0.5s;
+    }
+  }
+}
