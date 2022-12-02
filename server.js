@@ -9,8 +9,6 @@ app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
 app.use("/styles", express.static(__dirname + "/styles"));
 
 app.use("/", require("./routes/messageRoutes"));

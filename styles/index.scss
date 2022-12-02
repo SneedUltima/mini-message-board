@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap");
 
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +23,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
   margin-bottom: 10vh;
+
+  @include mobile {
+    font-size: 26px;
+  }
 }
 
 .messages-container {
@@ -73,6 +84,10 @@ body {
     flex-direction: column;
     gap: 20px;
     width: 400px;
+
+    @include mobile {
+      width: 300px;
+    }
 
     label {
       font-size: 24px;

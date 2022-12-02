@@ -16,7 +16,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
   margin-bottom: 10vh;
+}
+@media screen and (max-width: 480px) {
+  .title-container {
+    font-size: 26px;
+  }
 }
 
 .messages-container {
@@ -70,6 +76,11 @@ body {
   flex-direction: column;
   gap: 20px;
   width: 400px;
+}
+@media screen and (max-width: 480px) {
+  .form-container form {
+    width: 300px;
+  }
 }
 .form-container form label {
   font-size: 24px;
