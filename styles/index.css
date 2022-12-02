@@ -58,4 +58,49 @@ body {
   background: rgb(47, 255, 57);
   color: black;
   transition: 0.5s;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+}
+.form-container form label {
+  font-size: 24px;
+  font-weight: bold;
+}
+.form-container form input {
+  padding: 10px 10px;
+  background-color: #f1f1f1;
+  font-size: 24px;
+}
+.form-container form button {
+  cursor: pointer;
+  border: none;
+  padding: 0 56px;
+  height: 45px;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 24px;
+  border: 2px solid rgb(47, 255, 57);
+  background-color: transparent;
+  color: white;
+}
+.form-container form button:hover {
+  background: rgb(47, 255, 57);
+  color: black;
+  transition: 0.5s;
+}
+
+textarea {
+  resize: none;
+  padding: 10px 10px;
+  background-color: #f1f1f1;
+  font-size: 24px;
 }/*# sourceMappingURL=index.css.map */

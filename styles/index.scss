@@ -63,3 +63,52 @@ body {
     }
   }
 }
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+
+    label {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    input {
+      padding: 10px 10px;
+      background-color: #f1f1f1;
+      font-size: 24px;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      padding: 0 56px;
+      height: 45px;
+      border-radius: 7px;
+      font-weight: 700;
+      font-size: 24px;
+      border: 2px solid rgb(47, 255, 57);
+      background-color: transparent;
+      color: white;
+
+      &:hover {
+        background: rgb(47, 255, 57);
+        color: black;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+textarea {
+  resize: none;
+  padding: 10px 10px;
+  background-color: #f1f1f1;
+  font-size: 24px;
+}
